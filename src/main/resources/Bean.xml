@@ -29,10 +29,18 @@
         <property name="Course" >
             <map>
                 <entry key="Java" value="7 month"></entry>
-
                 <entry key="python" value="2 month"></entry>
             </map>
         </property>
+    </bean>
+
+    <bean id="Engine" class="com.parent_Structure.Engine">
+        <property name="CarEngine" value="CarEnginestr"/>
+    </bean>
+    <bean id="Car" class="com.parent_Structure.Car">
+        <constructor-arg value="Tata Harrier"/>
+        <constructor-arg value="MP09 Mkw 2243"/>
+        <constructor-arg ref="Engine"/> <!-- Add this line -->
     </bean>
 
 
