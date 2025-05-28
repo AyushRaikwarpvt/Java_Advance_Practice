@@ -1,47 +1,64 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config />
 
     <!-- bean definitions here -->
 
-    <bean id="Student_Data" class="com.parent_Structure.Student">
-        <property name="StudentIdl" value="112"/>
-        <property name="StudetnName" value="Ayush Raikwar"/>
-        <property name="StudentAdress" value="Indore"/>
-    </bean>
+<!--    <bean id="Student_Data" class="com.parent_Structure.Student">-->
+<!--        <property name="StudentIdl" value="112"/>-->
+<!--        <property name="StudetnName" value="Ayush Raikwar"/>-->
+<!--        <property name="StudentAdress" value="Indore"/>-->
+<!--    </bean>-->
 
-    <bean id="Employess_Data" class="com.parent_Structure.Employe">
-        <property name="Name" value="Ayush Raikwar"/>
-       <property name="Phone">
-           <list>
-               <value> 8982124975 </value>
-               <value> 8982196327 </value>
-           </list>
-       </property>
-        <property name="Adress">
-            <set>
-                <value>Indore</value>
-                <value>Banglore</value>
-            </set>
-        </property>
-        <property name="Course" >
-            <map>
-                <entry key="Java" value="7 month"></entry>
-                <entry key="python" value="2 month"></entry>
-            </map>
-        </property>
-    </bean>
+<!--    <bean id="Employess_Data" class="com.parent_Structure.Employe">-->
+<!--        <property name="Name" value="Ayush Raikwar"/>-->
+<!--       <property name="Phone">-->
+<!--           <list>-->
+<!--               <value> 8982124975 </value>-->
+<!--               <value> 8982196327 </value>-->
+<!--           </list>-->
+<!--       </property>-->
+<!--        <property name="Adress">-->
+<!--            <set>-->
+<!--                <value>Indore</value>-->
+<!--                <value>Banglore</value>-->
+<!--            </set>-->
+<!--        </property>-->
+<!--        <property name="Course" >-->
+<!--            <map>-->
+<!--                <entry key="Java" value="7 month"></entry>-->
+<!--                <entry key="python" value="2 month"></entry>-->
+<!--            </map>-->
+<!--        </property>-->
+<!--    </bean>-->
 
-    <bean id="Engine" class="com.parent_Structure.Engine">
-        <property name="CarEngine" value="CarEnginestr"/>
-    </bean>
-    <bean id="Car" class="com.parent_Structure.Car">
-        <constructor-arg value="Tata Harrier"/>
-        <constructor-arg value="MP09 Mkw 2243"/>
-        <constructor-arg ref="Engine"/> <!-- Add this line -->
-    </bean>
+<!--    <bean id="Engine" class="com.parent_Structure.Engine">-->
+<!--        <property name="CarEngine" value="CarEnginestr"/>-->
+<!--    </bean>-->
+<!--    <bean id="Car" class="com.parent_Structure.Car">-->
+<!--        <constructor-arg value="Tata Harrier"/>-->
+<!--        <constructor-arg value="MP09 Mkw 2243"/>-->
+<!--        <constructor-arg ref="Engine"/> &lt;!&ndash; Add this line &ndash;&gt;-->
+<!--    </bean>-->
 
+<!--    <bean id="Calculater" class="com.parent_Structure.Calculate">-->
+<!--        <constructor-arg value="12" type="int"/>-->
+<!--        <constructor-arg value="23" type="int"/>-->
+<!--    </bean>-->
 
+<!--    <bean id="Mouse" class="com.parent_Structure.Beans_LifeCycle.Mouse" init-method="Shuru"  destroy-method="End">-->
+<!--        <property name="CompanyName" value="Protonics" />-->
+<!--    </bean>-->
+<!--    <bean id="KeyBoard" class="com.parent_Structure.Beans_LifeCycle.KeyBoard" >-->
+<!--        <constructor-arg value="Intex"/>-->
+<!--    </bean>-->
+
+    <bean id="Lapi" class="com.parent_Structure.Beans_LifeCycle.laptop">
+        <constructor-arg value="HP"/>
+    </bean>
 </beans>
