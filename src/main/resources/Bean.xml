@@ -58,7 +58,15 @@
 <!--        <constructor-arg value="Intex"/>-->
 <!--    </bean>-->
 
-    <bean id="Lapi" class="com.parent_Structure.Beans_LifeCycle.laptop">
-        <constructor-arg value="HP"/>
+<!--    <bean id="Lapi" class="com.parent_Structure.Beans_LifeCycle.laptop">-->
+<!--        <constructor-arg value="HP"/>-->
+<!--    </bean>-->
+        <bean class="com.parent_Structure.AutoWiring.Address" name="address">
+            <property name="city" value="Indore"/>
+            <property name="street" value="Bhindchowk"/>
+        </bean>
+
+    <bean class="com.parent_Structure.AutoWiring.Employe"  id="Emp" autowire="byName">
+        <property name="emp_Name" value="Ayush Raikwar"/>
     </bean>
 </beans>
