@@ -1,4 +1,4 @@
-package com.parent_Structure;
+package com.parent_Structure.Basics;
 
 public class Calculate {
     private int a;

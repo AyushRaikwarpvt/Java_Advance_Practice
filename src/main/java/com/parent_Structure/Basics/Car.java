@@ -1,4 +1,4 @@
-package com.parent_Structure;
+package com.parent_Structure.Basics;
 
 public class Car {
     private  String CarName;

@@ -1,4 +1,4 @@
-package com.parent_Structure.AutoWiring;
+package com.parent_Structure.AutoWiring.AutoWiring_ByName;
 
 public class Address {
 

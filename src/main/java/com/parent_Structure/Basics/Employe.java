@@ -1,4 +1,4 @@
-package com.parent_Structure;
+package com.parent_Structure.Basics;
 
 import java.util.List;
 import java.util.Map;

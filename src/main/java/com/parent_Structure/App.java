@@ -1,9 +1,6 @@
 package com.parent_Structure;
 
-import com.parent_Structure.AutoWiring.Address;
-import com.parent_Structure.AutoWiring.Employe;
-import com.parent_Structure.Beans_LifeCycle.KeyBoard;
-import org.springframework.context.ApplicationContext;
+import com.parent_Structure.AutoWiring.AutoWiring_ByName.Employe;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -30,9 +27,15 @@ public class App {
 
 //     Object laptop = SuperObject.getBean("Lapi");
 //     System.out.println(laptop);
-        Employe employe = SuperObject.getBean("Emp", Employe.class);
-        System.out.println(employe);
+//        Employe employe = SuperObject.getBean("Emp", Employe.class);
+//        System.out.println(employe);
 
+//        Object emp = SuperObject.getBean("Emp");
+//        System.out.println(emp);
 
+//        Object docDetail = SuperObject.getBean("Doc_detail");
+//        System.out.println(docDetail);
+        Object anuj = SuperObject.getBean("Anuj");
+        System.out.println(anuj);
     }
 }

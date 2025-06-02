@@ -1,10 +1,11 @@
-package com.parent_Structure.AutoWiring;
+package com.parent_Structure.AutoWiring.AutoWiring_ByName;
 
 public class Employe {
+
     private Address address;
     private String emp_Name;  // ✅ New variable (camelCase)
 
-    // ✅ Constructor with both fields
+    // ✅ Constructor with both field
     public Employe(Address address, String emp_Name) {
         this.address = address;
         this.emp_Name = emp_Name;

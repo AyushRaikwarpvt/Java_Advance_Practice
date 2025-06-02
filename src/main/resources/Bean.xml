@@ -9,13 +9,13 @@
 
     <!-- bean definitions here -->
 
-<!--    <bean id="Student_Data" class="com.parent_Structure.Student">-->
+<!--    <bean id="Student_Data" class="com.parent_Structure.Basics.Student">-->
 <!--        <property name="StudentIdl" value="112"/>-->
 <!--        <property name="StudetnName" value="Ayush Raikwar"/>-->
 <!--        <property name="StudentAdress" value="Indore"/>-->
 <!--    </bean>-->
 
-<!--    <bean id="Employess_Data" class="com.parent_Structure.Employe">-->
+<!--    <bean id="Employess_Data" class="com.parent_Structure.Basics.Employe">-->
 <!--        <property name="Name" value="Ayush Raikwar"/>-->
 <!--       <property name="Phone">-->
 <!--           <list>-->
@@ -37,16 +37,16 @@
 <!--        </property>-->
 <!--    </bean>-->
 
-<!--    <bean id="Engine" class="com.parent_Structure.Engine">-->
+<!--    <bean id="Engine" class="com.parent_Structure.Basics.Engine">-->
 <!--        <property name="CarEngine" value="CarEnginestr"/>-->
 <!--    </bean>-->
-<!--    <bean id="Car" class="com.parent_Structure.Car">-->
+<!--    <bean id="Car" class="com.parent_Structure.Basics.Car">-->
 <!--        <constructor-arg value="Tata Harrier"/>-->
 <!--        <constructor-arg value="MP09 Mkw 2243"/>-->
 <!--        <constructor-arg ref="Engine"/> &lt;!&ndash; Add this line &ndash;&gt;-->
 <!--    </bean>-->
 
-<!--    <bean id="Calculater" class="com.parent_Structure.Calculate">-->
+<!--    <bean id="Calculater" class="com.parent_Structure.Basics.Calculate">-->
 <!--        <constructor-arg value="12" type="int"/>-->
 <!--        <constructor-arg value="23" type="int"/>-->
 <!--    </bean>-->
@@ -61,12 +61,41 @@
 <!--    <bean id="Lapi" class="com.parent_Structure.Beans_LifeCycle.laptop">-->
 <!--        <constructor-arg value="HP"/>-->
 <!--    </bean>-->
-        <bean class="com.parent_Structure.AutoWiring.Address" name="address">
-            <property name="city" value="Indore"/>
-            <property name="street" value="Bhindchowk"/>
-        </bean>
+<!--        <bean class="com.parent_Structure.AutoWiring.AutoWiring_ByName.Address" name="address">-->
+<!--            <property name="city" value="Indore"/>-->
+<!--            <property name="street" value="Bhindchowk"/>-->
+<!--        </bean>-->
 
-    <bean class="com.parent_Structure.AutoWiring.Employe"  id="Emp" autowire="byName">
-        <property name="emp_Name" value="Ayush Raikwar"/>
+<!--    <bean class="com.parent_Structure.AutoWiring.AutoWiring_ByName.Employe" id="Emp" autowire="byName">-->
+<!--        <property name="emp_Name" value="Ayush Raikwar"/>-->
+<!--    </bean>-->
+
+<!--    <bean name="Emp" class="com.parent_Structure.AutoWiringByType.Emp" autowire="byType" >-->
+<!--        <property name="emp_Name" value="Ayush Raikwar"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="Post_detail" class="com.parent_Structure.AutoWiringByType.Post" >-->
+<!--        <property name="postName" value="full Stack dev"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="com.parent_Structure.AutoWiringByConstructor.Doctor" name="Doc_detail" autowire="constructor">-->
+<!--            <property name="Doc_Name" value="Hansraj Hathi" />-->
+<!--    </bean>-->
+<!--    <bean class="com.parent_Structure.AutoWiringByConstructor.Marij">-->
+
+<!--    </bean>-->
+
+    <bean class="com.parent_Structure.AutoWiringByAnotation.FavFood " name="FavFood1">
+        <property name="favfood" value="Dhokala"/>
+    </bean>
+
+    <bean class="com.parent_Structure.AutoWiringByAnotation.FavFood " name="FavFood2">
+        <property name="favfood" value="Dal Bati"/>
+    </bean>
+
+
+
+    <bean class="com.parent_Structure.AutoWiringByAnotation.Anuj" name="Anuj" >
+        <property name="NickName" value="Badmosh"/>
     </bean>
 </beans>
