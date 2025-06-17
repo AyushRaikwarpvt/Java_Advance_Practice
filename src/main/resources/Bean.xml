@@ -77,25 +77,45 @@
 <!--    <bean id="Post_detail" class="com.parent_Structure.AutoWiringByType.Post" >-->
 <!--        <property name="postName" value="full Stack dev"/>-->
 <!--    </bean>-->
-
 <!--    <bean class="com.parent_Structure.AutoWiringByConstructor.Doctor" name="Doc_detail" autowire="constructor">-->
 <!--            <property name="Doc_Name" value="Hansraj Hathi" />-->
 <!--    </bean>-->
 <!--    <bean class="com.parent_Structure.AutoWiringByConstructor.Marij">-->
-
 <!--    </bean>-->
+<!--    <bean class="com.parent_Structure.AutoWiringByAnotation.FavFood " name="FavFood1">-->
+<!--        <property name="favfood" value="Dhokala"/>-->
+<!--    </bean>-->
+<!--    <bean class="com.parent_Structure.AutoWiringByAnotation.FavFood " name="FavFood2">-->
+<!--        <property name="favfood" value="Dal Bati"/>-->
+<!--    </bean>-->
+<!--    <bean class="com.parent_Structure.AutoWiringByAnotation.Anuj" name="Anuj" >-->
+<!--        <property name="NickName" value="Badmosh"/>-->
+<!--    </bean>-->
+    <bean class="com.parent_Structure.Rivision.Subject" name="Subjects">
+        <property name="subjects">
+            <list>
+                <value>Maths</value>
+                <value>Science</value>
+                <value>English</value>
+            </list>
+        </property>
 
-    <bean class="com.parent_Structure.AutoWiringByAnotation.FavFood " name="FavFood1">
-        <property name="favfood" value="Dhokala"/>
     </bean>
 
-    <bean class="com.parent_Structure.AutoWiringByAnotation.FavFood " name="FavFood2">
-        <property name="favfood" value="Dal Bati"/>
+    <bean class="com.parent_Structure.Rivision.Adress" name="Adress">
+        <property name="Street" value="Sech no 140"/>
+        <property name="Landmark" value="Near Apna Sweet"/>
+        <property name="City" value="Indore"/>
+    </bean>
+
+    <bean class="com.parent_Structure.Rivision.Student" name="Student_Cls">
+        <property name="Student_Name" value="Ayush Raikwar"/>
+        <property name="Student_Roll" value="122"/>
+        <property name="Subject" value="Maths"/>
+        <property name="subjects" ref="Subjects"/>
     </bean>
 
 
 
-    <bean class="com.parent_Structure.AutoWiringByAnotation.Anuj" name="Anuj" >
-        <property name="NickName" value="Badmosh"/>
-    </bean>
+
 </beans>

@@ -1,6 +1,7 @@
 package com.parent_Structure;
 
 import com.parent_Structure.AutoWiring.AutoWiring_ByName.Employe;
+import com.parent_Structure.Rivision.Student;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -35,7 +36,10 @@ public class App {
 
 //        Object docDetail = SuperObject.getBean("Doc_detail");
 //        System.out.println(docDetail);
-        Object anuj = SuperObject.getBean("Anuj");
-        System.out.println(anuj);
+//        Object anuj = SuperObject.getBean("Anuj");
+//        System.out.println(anuj);
+
+        Student studentCls = (Student) SuperObject.getBean("Student_Cls");
+        System.out.println(studentCls);
     }
 }
